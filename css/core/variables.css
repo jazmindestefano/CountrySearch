@@ -1,0 +1,21 @@
+/**
+ * ======================================== 
+ * Variables
+ * ========================================
+**/
+
+:root{
+    /*Background*/
+    --bg-element: #ffff;
+    --bg-block: #FBFAFB;
+
+    /*Color*/
+    --grey-three: #ece7e7;
+    --grey-one: #0000;
+    --grey-two: #cbd6d6;
+
+    /*Base Font*/
+    --base-font: 'Poppins', sans-serif;
+
+    /*Shadow*/
+}

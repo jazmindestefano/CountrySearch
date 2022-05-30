@@ -1,0 +1,14 @@
+/**
+ * ======================================== 
+ * Styles
+ * ========================================
+ */
+
+/* Core */
+@import 'core/global.css';
+@import 'core/main.css';
+@import 'core/normalize.css';
+@import 'core/variables.css';
+
+/* Modules */
+@import 'modules/custom.css';

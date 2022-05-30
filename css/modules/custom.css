@@ -1,0 +1,151 @@
+/**
+ * ======================================== 
+ * Custom
+ * ========================================
+**/
+
+/*GENERAL*/
+.header__container{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 2px solid var(--grey-two);
+}
+
+.header__logo{
+    width: 60px;
+}
+
+.main{
+    background-color: var(--grey-three);
+    padding: 30px 0;
+}
+
+.input__container{
+    display: flex;
+    font-size: 12px;
+}
+
+.search__content{
+    position: relative;
+}
+
+.search-icon{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--grey-three);
+}
+
+.select, .search-input{
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px ;
+    border: none;
+    box-shadow: var(--grey-three);
+}
+
+.select{
+    font-weight: bolder;
+}
+
+.country{
+    margin-top: 40px;
+}
+
+.country__container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.country__content{
+    background-color: var(--bg-block);
+    border-radius: 5px;
+    object-fit: contain;
+    width: 250px;
+    box-shadow:0 0 20px rgb(0, 0, 0, 0.5);
+}
+
+.country__image{
+    height: 150px;
+   object-fit: cover;
+   border-top-left-radius: 5px ;
+   border-top-right-radius: 5px ;
+}
+
+.country__information{
+    padding: 10px 20px 20px 20px;
+}
+
+.text{
+    text-align: left;
+    line-height: 30px;
+}
+
+.text-info{
+    font-weight: normal;
+}
+
+.country__population, .country__region, .country__capital{
+    font-weight: 500;
+}
+
+.footer__text{
+    font-weight: normal;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer{
+    border-top: 2px solid var(--grey-two);
+    padding: 5px;
+    box-shadow: 0px 5px 30px var(--grey-shadow);
+    height: 40px;
+}
+
+/*MOBILE*/
+@media (max-width: 767px){
+    .container{
+        padding: 0 5vw;
+    }
+
+    .input__container{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-input{
+        padding: 5px 40px;
+        width: 300px;
+        height: 40px;
+    }
+
+    .country__container{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 768px){
+    .input__container{
+        justify-content: space-between;
+    }
+
+    .search-input{
+        padding: 5px 40px;
+        width: 400px;
+        height: 40px;
+    }
+
+    .country__container{
+       justify-content: space-between;
+       align-content: stretch;
+    }
+}
